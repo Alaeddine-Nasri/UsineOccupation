@@ -1,0 +1,46 @@
+/* Add this to your CSS or use a styling solution like styled-components */
+.room-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  height: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.room-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.occupied {
+  background-color: #b21d1f;
+  color: #fff;
+}
+.not-occypide {
+  background-color: #2aa054;
+  color: #333333;
+}
+.not-unkown {
+  background-color: #f0f0f0;
+  color: #333333;
+}
+.listmode {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.gridmode {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

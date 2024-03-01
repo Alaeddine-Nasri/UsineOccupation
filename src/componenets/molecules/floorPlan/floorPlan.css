@@ -1,0 +1,41 @@
+/* floor-plan.css */
+.floor-plan {
+  display: flex;
+  flex-direction: column;
+  /* margin: 20px; */
+  width: 100%;
+}
+
+.room-list {
+  /* gap: 2%; */
+  width: 100%;
+}
+.list-mode {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.grid-mode {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 20px;
+}
+
+.scrollable-area {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.scrollable-area::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+.scrollable-area::-webkit-scrollbar-thumb {
+  background-color: #6b6b6b; /* Set the color of the scrollbar thumb */
+  border-radius: 4px; /* Add rounded corners to the scrollbar thumb */
+}
+
+.scrollable-area::-webkit-scrollbar-track {
+  background-color: #fff; /* Set the color of the scrollbar track */
+}

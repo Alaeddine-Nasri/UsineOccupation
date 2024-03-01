@@ -1,0 +1,73 @@
+/* dropList.css */
+
+.drop-list-container {
+  position: relative;
+}
+
+.drop-list-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.drop-list-header.open {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.selected-option {
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drop-list {
+  border: none;
+}
+
+.options-container {
+  position: absolute;
+  top: 95%;
+  left: 0;
+  width: 100%;
+  padding-bottom: 2px;
+  /* border: 3px solid black; */
+  box-shadow: inset 0 0 0 0.5px #f0f0f0;
+  border-top: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  padding: 5px;
+  cursor: pointer;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.option.selected {
+  background-color: #f2f4f7;
+}
